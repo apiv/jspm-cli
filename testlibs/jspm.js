@@ -24,7 +24,6 @@ System.config({
     "https": "npm:https-browserify@0.0.1",
     "jquery": "github:components/jquery@2.1.4",
     "jspm": "github:jspm/jspm-cli@0.17",
-    "jspm-cli": "github:jspm/jspm-cli@0.17",
     "jspm-github": "github:jspm/github@0.17",
     "jspm-npm": "github:jspm/npm@0.17",
     "jspm-registry": "npm:jspm-registry@0.4.0",
@@ -125,6 +124,13 @@ System.config({
         "jquery": "github:components/jquery@2.1.4"
       }
     },
+    "npm:align-text@0.1.3": {
+      "map": {
+        "kind-of": "npm:kind-of@2.0.1",
+        "longest": "npm:longest@1.0.1",
+        "repeat-string": "npm:repeat-string@1.5.2"
+      }
+    },
     "npm:ao-mesher@0.2.10": {
       "map": {
         "cwise-compiler": "npm:cwise-compiler@0.1.0",
@@ -147,7 +153,7 @@ System.config({
     },
     "npm:asn1.js@4.2.1": {
       "map": {
-        "bn.js": "npm:bn.js@4.4.0",
+        "bn.js": "npm:bn.js@4.5.0",
         "inherits": "npm:inherits@2.0.1",
         "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
       }
@@ -210,13 +216,13 @@ System.config({
     },
     "npm:browserify-rsa@4.0.0": {
       "map": {
-        "bn.js": "npm:bn.js@4.4.0",
+        "bn.js": "npm:bn.js@4.5.0",
         "randombytes": "npm:randombytes@2.0.1"
       }
     },
     "npm:browserify-sign@4.0.0": {
       "map": {
-        "bn.js": "npm:bn.js@4.4.0",
+        "bn.js": "npm:bn.js@4.5.0",
         "browserify-rsa": "npm:browserify-rsa@4.0.0",
         "create-hash": "npm:create-hash@1.1.2",
         "create-hmac": "npm:create-hmac@1.1.4",
@@ -236,6 +242,12 @@ System.config({
         "base64-js": "npm:base64-js@0.0.8",
         "ieee754": "npm:ieee754@1.1.6",
         "is-array": "npm:is-array@1.0.1"
+      }
+    },
+    "npm:center-align@0.1.2": {
+      "map": {
+        "align-text": "npm:align-text@0.1.3",
+        "lazy-cache": "npm:lazy-cache@0.2.4"
       }
     },
     "npm:chalk@1.1.1": {
@@ -258,6 +270,13 @@ System.config({
         "source-map": "npm:source-map@0.4.4"
       }
     },
+    "npm:cliui@2.1.0": {
+      "map": {
+        "center-align": "npm:center-align@0.1.2",
+        "right-align": "npm:right-align@0.1.3",
+        "wordwrap": "npm:wordwrap@0.0.2"
+      }
+    },
     "npm:combined-stream@0.0.7": {
       "map": {
         "delayed-stream": "npm:delayed-stream@0.0.5"
@@ -275,7 +294,7 @@ System.config({
     },
     "npm:create-ecdh@4.0.0": {
       "map": {
-        "bn.js": "npm:bn.js@4.4.0",
+        "bn.js": "npm:bn.js@4.5.0",
         "elliptic": "npm:elliptic@6.0.2"
       }
     },
@@ -347,14 +366,14 @@ System.config({
     },
     "npm:diffie-hellman@5.0.0": {
       "map": {
-        "bn.js": "npm:bn.js@4.4.0",
+        "bn.js": "npm:bn.js@4.5.0",
         "miller-rabin": "npm:miller-rabin@4.0.0",
         "randombytes": "npm:randombytes@2.0.1"
       }
     },
     "npm:elliptic@6.0.2": {
       "map": {
-        "bn.js": "npm:bn.js@4.4.0",
+        "bn.js": "npm:bn.js@4.5.0",
         "brorand": "npm:brorand@1.0.5",
         "hash.js": "npm:hash.js@1.0.3",
         "inherits": "npm:inherits@2.0.1"
@@ -730,6 +749,11 @@ System.config({
         "semver": "npm:semver@4.3.6"
       }
     },
+    "npm:kind-of@2.0.1": {
+      "map": {
+        "is-buffer": "npm:is-buffer@1.1.0"
+      }
+    },
     "npm:liftoff@2.2.0": {
       "map": {
         "extend": "npm:extend@2.0.1",
@@ -741,7 +765,7 @@ System.config({
     },
     "npm:miller-rabin@4.0.0": {
       "map": {
-        "bn.js": "npm:bn.js@4.4.0",
+        "bn.js": "npm:bn.js@4.5.0",
         "brorand": "npm:brorand@1.0.5"
       }
     },
@@ -863,7 +887,7 @@ System.config({
     },
     "npm:public-encrypt@4.0.0": {
       "map": {
-        "bn.js": "npm:bn.js@4.4.0",
+        "bn.js": "npm:bn.js@4.5.0",
         "browserify-rsa": "npm:browserify-rsa@4.0.0",
         "create-hash": "npm:create-hash@1.1.2",
         "parse-asn1": "npm:parse-asn1@5.0.0",
@@ -945,6 +969,11 @@ System.config({
         "tunnel-agent": "npm:tunnel-agent@0.4.1"
       }
     },
+    "npm:right-align@0.1.3": {
+      "map": {
+        "align-text": "npm:align-text@0.1.3"
+      }
+    },
     "npm:rimraf@2.3.4": {
       "map": {
         "glob": "npm:glob@4.5.3"
@@ -1021,9 +1050,15 @@ System.config({
         "mkdirp": "npm:mkdirp@0.5.1",
         "rsvp": "npm:rsvp@3.1.0",
         "source-map": "npm:source-map@0.4.4",
-        "systemjs": "github:systemjs/systemjs@master",
+        "systemjs": "npm:systemjs@0.19.6",
         "traceur": "npm:traceur@0.0.92",
-        "uglify-js": "npm:uglify-js@2.4.24"
+        "uglify-js": "npm:uglify-js@2.6.1"
+      }
+    },
+    "npm:systemjs@0.19.6": {
+      "map": {
+        "es6-module-loader": "npm:es6-module-loader@0.17.8",
+        "when": "npm:when@3.7.5"
       }
     },
     "npm:tar@1.0.3": {
@@ -1076,6 +1111,14 @@ System.config({
         "yargs": "npm:yargs@3.5.4"
       }
     },
+    "npm:uglify-js@2.6.1": {
+      "map": {
+        "async": "npm:async@0.2.10",
+        "source-map": "npm:source-map@0.5.3",
+        "uglify-to-browserify": "npm:uglify-to-browserify@1.0.2",
+        "yargs": "npm:yargs@3.10.0"
+      }
+    },
     "npm:url@0.11.0": {
       "map": {
         "punycode": "npm:punycode@1.3.2",
@@ -1110,6 +1153,14 @@ System.config({
     "npm:which@1.2.0": {
       "map": {
         "is-absolute": "npm:is-absolute@0.1.7"
+      }
+    },
+    "npm:yargs@3.10.0": {
+      "map": {
+        "camelcase": "npm:camelcase@1.2.1",
+        "cliui": "npm:cliui@2.1.0",
+        "decamelize": "npm:decamelize@1.1.1",
+        "window-size": "npm:window-size@0.1.0"
       }
     },
     "npm:yargs@3.5.4": {

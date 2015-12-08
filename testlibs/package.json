@@ -9,7 +9,6 @@
     "ember": "components/ember@1.13.2",
     "jquery": "components/jquery@2.1.4",
     "jspm": "jspm/jspm-cli@0.17",
-    "jspm-cli": "jspm/jspm-cli@0.17",
     "mocha": "npm:mocha@^2.3.4",
     "rsvp": "npm:rsvp@3.1.0",
     "systemjs": "systemjs/systemjs@master",
@@ -194,8 +193,7 @@
     },
     "npm:browserify-zlib@0.1.4": {
       "dependencies": {
-        "readable-stream": "^1.0.27-1",
-        "pako": "~0.2.0"
+        "readable-stream": "^1.0.27-1"
       },
       "map": {
         "_stream_transform": "readable-stream/transform",
@@ -312,10 +310,7 @@
       },
       "systemjs": {},
       "dependencies": {
-        "core-util-is": "~1.0.0",
-        "isarray": "0.0.1",
         "string_decoder": "~0.10.0",
-        "inherits": "~2.0.1",
         "stream-browserify": "~1.0.0"
       }
     },
@@ -417,8 +412,7 @@
         "es6-shim/Promise.js": {
           "format": "amd"
         }
-      },
-      "map": {}
+      }
     }
   }
 }
